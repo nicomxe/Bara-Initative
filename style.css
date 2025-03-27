@@ -1,82 +1,105 @@
 
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Georgia', serif;
     background-color: #f7f9e6;
     color: #2a1015;
 }
 
 header {
-    background-color: #ce9c92;
-    padding: 20px;
-    text-align: center;
+    background-color: #ba8887;
 }
 
-nav {
+.navbar {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 10px 20px;
 }
 
-nav h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.logo {
+    height: 60px;
+    margin-right: 20px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #2a1015;
+    color: black;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.1rem;
 }
 
-nav ul li a:hover {
-    color: #49b0b6;
+main {
+    text-align: center;
+    padding: 30px 10px;
 }
 
-.hero {
-    margin: 20px auto;
-    max-width: 700px;
+.mascot {
+    width: 100px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.subtitle {
+    background-color: #ce9c92;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     font-size: 1.2rem;
 }
 
-.features {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
-    margin: 40px 20px;
+    gap: 20px;
+    margin: 40px 10px;
 }
 
 .card {
-    background-color: #8dbbbb;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1 1 250px;
-    text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+    width: 200px;
+    overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.label {
+    background-color: #c68744;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 footer {
-    background-color: #ba8887;
+    background-color: #49b0b6;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
 }
